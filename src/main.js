@@ -6,7 +6,7 @@ import router from './router'
 import axios from 'axios'
 
 Vue.config.productionTip = false
-axios.defaults.baseURL = 'http://localhost:3000'
+axios.defaults.baseURL = 'https://readability-backend.herokuapp.com/'
 
 /* eslint-disable no-new */
 new Vue({
