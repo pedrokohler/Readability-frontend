@@ -1,6 +1,6 @@
 # Readability
 
-> A project for readability tests in portuguese. It gives you the scores of the most relevant tests any text you insert and stores that text for future consultation.
+> A project for readability tests in portuguese. It gives you the scores of the most relevant tests for any text you insert and stores that text for future consultation.
 
 ## Live Version
 
