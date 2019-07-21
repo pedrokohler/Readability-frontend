@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Text from '@/components/Text'
+import MainPage from '@/components/MainPage'
 
 Vue.use(Router)
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: Text
+      name: 'MainPage',
+      component: MainPage
     }
   ]
 })

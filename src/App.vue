@@ -1,6 +1,14 @@
 <template>
   <div id="app">
-    <router-view/>
+    <v-app>
+      <v-navigation></v-navigation>
+      <v-toolbar app>Text Readability Calculator</v-toolbar>
+      <v-content>
+        <v-container grid-list-xl>
+          <router-view/>
+        </v-container>
+      </v-content>
+    </v-app>
   </div>
 </template>
 
