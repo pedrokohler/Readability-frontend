@@ -1,6 +1,10 @@
-# client
+# Readability
 
-> A project for language tests.
+> A project for readability tests in portuguese. It gives you the scores of the most relevant tests for any text you insert and stores that text for future reference.
+
+## Live Version
+
+> [See it live here](https://readability-frontend.herokuapp.com/#/)
 
 ## Build Setup
 
