@@ -1,20 +1,24 @@
 <template>
   <div id="app">
     <v-app>
-      <v-navigation></v-navigation>
-      <v-toolbar app>Text Readability Calculator</v-toolbar>
+      <Toolbar />
       <v-content>
         <v-container grid-list-xl>
           <router-view/>
         </v-container>
       </v-content>
+      <Footer />
     </v-app>
   </div>
 </template>
 
 <script>
+import Toolbar from '@/components/Toolbar'
+import Footer from '@/components/Footer'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: { Toolbar, Footer }
 }
 </script>
 

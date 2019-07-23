@@ -12,8 +12,8 @@ import TextForm from './TextForm'
 export default {
     components: { Texts, TextForm },
     methods:{
-        updateTexts(){
-            this.$refs.loadedTexts.updateTexts();
+        updateTexts(data){
+            this.$refs.loadedTexts.updateTexts(data);
         }
     }
 }

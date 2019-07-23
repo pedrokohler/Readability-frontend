@@ -32,11 +32,15 @@ export default {
     }
   },
   methods:{
-    updateTexts(){
-      textService.getAll()
-        .then(((texts) => { 
-          this.$set(this, "texts", texts)
-        }).bind(this))
+    updateTexts(data){
+      if(data){
+        this.texts.unshift(data)
+      }else{
+        textService.getAll()
+          .then(((texts) => { 
+            this.$set(this, "texts", texts)
+          }).bind(this))
+      }      
     }
   },
   mounted(){

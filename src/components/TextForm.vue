@@ -47,14 +47,19 @@ export default {
     methods:{
       handleSend(){
         this.sendText();
-        this.cleanInputs();
+        this.clearInputs();
       },
-      cleanInputs(){
+      clearInputs(){
         this.title = "";
         this.text = "";
       },
       sendText(){
-        textService.create(this.title, this.text).then(this.$emit('updateTexts'))
+        textService.create(this.title, this.text)
+          .then(res => this.$emit('updateTexts', res))
+          .catch(err =>{
+            window.alert(err.message);
+          })
+          
       }
     }
 }

@@ -11,6 +11,9 @@ export default {
       text
     }
 
-    return axios.post("/api/texts", params).then(res => res.data)
+    if(title && text)
+      return axios.post("/api/texts", params).then(res => res.data)
+    else 
+      return Promise.reject(new Error('Must have a title and a text.'))
   }
 }
